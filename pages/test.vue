@@ -4,7 +4,7 @@
 
 <template lang="html">
   <section class="container">
-    <div>{{ testMsg }}</div>
+    <div class="div1">{{ testMsg }}</div>
   </section>
 </template>
 
@@ -18,13 +18,3 @@
     }
   }
 </script>
-
-<style>
-  .container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-</style>
