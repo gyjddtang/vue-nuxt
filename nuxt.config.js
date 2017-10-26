@@ -33,6 +33,18 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+
+    vendor: [ 'axios' ]
+  },
+
+  modules: [ '@nuxtjs/proxy' ],
+
+  proxy: {
+    '/wisdomradio': {
+      target: 'http://10.66.120.69:28083',
+      changeOrigin: true,
+      logLevel: 'debug'
     }
   }
 }
